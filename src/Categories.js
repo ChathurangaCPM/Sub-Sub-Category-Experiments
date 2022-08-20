@@ -298,12 +298,15 @@ const dataObject = [
     ]
   }
 ];
+
 export default function Categories() {
   return (
     <div>
       {dataObject.map((key, value) => {
+        console.log(key);
         return <SingleCategory category={key} inCategory={value} />;
       })}
+      
     </div>
   );
 }
